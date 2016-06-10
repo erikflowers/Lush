@@ -1,0 +1,19 @@
+<!doctype html>
+<html ng-app="ingExperience" lang="nl">
+	{% include base.html %}
+	{% include header.html %}
+	<body class="tg">
+		<header top-navigation></header>
+		<main role="main" data-current-content="*">
+			<div class="row">
+				<div class="col-xxs-10 col-xxs-offset-1 col-lg-6 col-lg-offset-3">
+					<h1 class="heading-b-xxxl">{{ page.title }}</h1>
+					{{ content }}
+				</div>
+			</div>
+		</main>
+		<div id="footer-app" class="ng-scope">
+		    <div class="tg" g-footer=""></div>
+		</div>
+	</body>
+</html>

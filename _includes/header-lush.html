@@ -1,0 +1,107 @@
+<head>
+	{% include base.html %}
+	<meta charset="utf-8"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link type="image/ico" rel="icon" href="https://www.ing.nl/assets/cds/images/favicon.ico">
+
+	<title>{{ page.title }}</title>
+
+	<!--[if gt IE 9]><!-->
+	<!-- link rel="stylesheet" href="build/css/the-guide-styles-responsive.css"/ -->
+	<link rel="stylesheet" href="http://www.ing-experience-design.com/assets/css/e8ab0891.the-guide-styles-responsive.min.css"/>
+	<!--<![endif]-->
+
+	<!-- Online Lush Styling -->
+	<link rel="stylesheet" href="{{ base }}/assets/css/lush.css"/>
+	<link rel="stylesheet" href="{{ base }}/assets/css/jquery.fancybox.css" />
+
+	<!--[if lt IE 10]>
+	<link rel="stylesheet" href="build/bless/the-guide-styles-responsive-blessed1.css"/>
+	<link rel="stylesheet" href="build/bless/the-guide-styles-responsive.css"/>
+	<![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="http://www.ing-experience-design.com/assets/js/angular-all.js"></script>
+	<script src="http://www.ing-experience-design.com/assets/js/spectingular-core.min.js"></script>
+	<script src="http://www.ing-experience-design.com/assets/js/spectingular-components.min.js"></script>
+	<script src="http://www.ing-experience-design.com/assets/js/global.ui.min.js"></script>
+	<script src="http://www.ing-experience-design.com/assets/js/theguide-components.min.js"></script>
+	<script src="http://www.ing-experience-design.com/assets/js/gFooter.apps.min.js"></script>
+	<script src="http://www.ing-experience-design.com/assets/js/gFooterData.js"></script>
+	<script src="http://www.ing-experience-design.com/assets/js/gTopNavigation.apps.min.js"></script>
+
+	<!--[if lt IE 10]>
+	<script src="js/flexie.js"></script>
+	<![endif]-->
+
+	<!-- CUSTOM CSS FOR EXPERIENCE WEBSITE -->
+	<link rel="stylesheet" href="http://www.ing-experience-design.com/assets/css/custom.css">
+
+	<!-- Angular APP -->
+	<script src="{{ base }}/assets/js/app-lush.js"></script>
+
+	<!-- COOKIE CONS -->
+	{% include cookie.html %}
+	<script src="http://www.ing-experience-design.com/assets/js/cookie.js"></script>
+
+	<!-- build menu, placed in this file for Jekyll base paths -->
+	<script>
+		angular.module('gTopNavigation').service('gTopNavigationData', function() {
+
+		var data = {};
+
+		data.header = {
+			"headerLinks": [{
+				"name": "About",
+				"linkTitle": null,
+				"target": "_self",
+				"robots": null,
+				"href": "{{base}}/"
+			}, {
+				"name": "Online Lush",
+				"linkTitle": null,
+				"target": "_self",
+				"robots": null,
+				"href": "{{base}}/content/online-lush.html"
+			}, {
+				"name": "Styling Lush",
+				"linkTitle": null,
+				"target": "_self",
+				"robots": null,
+				"href": "{{base}}/content/styling-lush.html"
+			}, {
+				"name": "Fork on Github",
+				"linkTitle": null,
+				"target": "_self",
+				"robots": null,
+				"href": "https://github.com/designing-experiences/Lush.js"
+			}, {
+				"name": "Download on NPM",
+				"linkTitle": null,
+				"target": "_self",
+				"robots": null,
+				"href": "https://www.npmjs.com/package/Lush.js"
+			}],
+			"showSearchbox": false
+		};
+		data.segments = [{
+			"href": "http://www.ing-experience-design.com/",
+			"name": "Home"
+		}, {
+			"href": "/xd-conf",
+			"name": "Conference"
+		}, {
+			"href": "/service-blueprinting",
+			"name": "Service Blueprinting"
+		}, {
+			"href": "/lush",
+			"name": "Lush"
+		}];
+		
+		data.segmentActive = 'Lush';
+
+		return data;
+	});
+	</script>
+</head>

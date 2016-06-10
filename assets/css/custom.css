@@ -1,0 +1,628 @@
+/**
+ * Custom CSS for experience website
+ */
+.tg img {
+    width: 100%;
+}
+
+/**
+ * Set the brandbar
+ */
+.tg .brandbar-image {
+    margin-top: -1.25rem;
+}
+.heading-main {
+    color: #FFF !important;
+    text-shadow: 0 0 8px #333; /* glow effect */
+}
+.heading-banner {
+    position: relative;
+    background-color: white;
+    z-index: 4;
+    width: 10rem;
+    height: 19rem;
+    left: 70%;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    text-shadow: 0 0 8px #333; /* glow effect */
+    opacity: 1;
+    transition: 1s;
+}
+.heading-banner > img {
+    position: absolute;
+    top: 6rem;
+    width: 5rem;
+    left: 2.5rem;
+}
+
+/**
+ * Temp container
+ */
+.container {
+    height: 5.5rem !important;
+}
+
+/**
+ * Register label
+ */
+#registerLabel {
+    position: fixed;
+    right: -90px;
+    top: 4rem;
+    color: #FFF;
+    z-index: 4; /* before blue but after menu */
+    background-color: #ff6200;
+    padding: .8rem;
+    font-weight: bold;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    cursor: pointer;
+    transition: 1s;
+    display: none; /* removed */
+}
+#registerLabel.show {
+    right: 0px;
+}
+/* EVERYTHING SMALLER in WIDTH THAN 768 */
+@media only screen and (max-width: 768px) {
+    #registerLabel {
+        right: 0px !important;
+    }
+}
+
+/**
+ * Add a right solid border
+ */
+.rightSolidBorder {
+    border-right: 1px solid #333 !important;
+}
+/* EVERYTHING SMALLER in WIDTH THAN 1199 (based on 1200px) */
+@media only screen and (max-width: 1199px) {
+    .rightSolidBorder {
+        border-right: 0px solid #333 !important;
+    }
+}
+
+/**
+ * Set headbar
+ */
+#headBar {
+    overflow: hidden;
+    margin-top: -1.25rem;
+}
+
+/**
+ * Signup DIV
+ */
+#signUp {
+    position: absolute;
+    right: 50%;
+    margin-right: -560px;
+    top: 0.5rem;
+    width: 340px;
+    text-indent: right;
+    transition: 1s;
+}
+/* EVERYTHING SMALLER in WIDTH THAN 1200 */
+@media only screen and (max-width: 1200px) {
+    #signUp {
+        margin-right: -480px;
+    }
+}
+/* EVERYTHING SMALLER in WIDTH THAN 992 */
+@media only screen and (max-width: 992px) {
+    #signUp {
+        margin-right: -372px;
+    }
+}
+/* EVERYTHING SMALLER in WIDTH THAN 768 */
+@media only screen and (max-width: 768px) {
+    #signUp {
+        display: none !important;
+    }
+}
+
+#signUp > span {
+    position: relative;
+    top: 0.15rem;
+    padding-right: .5rem;
+}
+/**
+ * End Signup DIV
+ */
+.eventLogo {
+    position: absolute;
+    height: 280px;
+    left: 50%;
+    margin-left: -140px;
+    top: 6%;
+    width: 280px;
+    display: none; /* this will be set to block in expConf.js */
+    transition: 1.5s;
+}
+.quote {
+    min-height: 22rem;
+    padding-top:7rem !important;
+    padding-bottom: 7rem !important;
+}
+blockquote {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center !important;
+    font-style: italic;
+    line-height: 2rem !important;
+    color: #767676;
+}
+img[class^="blueQuote"] {
+    width: 4rem;
+    opacity: .9;
+    transition: 1.5s;
+    display: inline-block;
+    position: absolute;
+    
+}
+.blueQuoteUp {
+    top: -1rem;
+    left: -1rem;
+}
+.blueQuoteDown {
+    bottom: 3rem;
+    right: -1rem;
+    transform: rotate(180deg);
+}
+
+/**
+ * Heading sizes
+ */
+.tg h1 {
+    margin-top: 1.25rem;
+}
+
+/**
+ * Confrence class group
+ */
+div[class^="conference"] {
+    position: absolute;
+    color: #FFF;
+    width: 400px;
+    left: 50%;
+    margin-left: -200px;
+    text-align: center;
+}
+
+.conferenceLocation {
+    font-size: 1.75rem;
+    top: 36%;
+    display: none; /* this will be set to block in expConf.js */
+}
+.conferenceDate {
+    font-size: 1.25rem;
+    top: 43%;
+    display: none; /* this will be set to block in expConf.js */
+}
+
+/**
+ * full screen images
+ */
+.fullScreenImage {
+    position: relative;
+    background-image: url('../img/location.jpg');
+    width: 100%;
+    height: 38rem;
+    margin-top: 6rem;
+    background-position: center;
+    background-size: cover;
+}
+
+/**
+ * Blue rows
+ */
+.row-blue {
+    background-color: #60A6DA !important;
+    color: #FFF !important;
+}
+.row-blue a:link {
+    color: white;
+}
+.row-blue a:visited {
+    color: white;
+}
+.row-blue a:hover {
+    color: white;
+    text-decoration: none;
+}
+.row-blue a:active {
+    color: white;
+}
+
+/**
+ * END
+ */
+
+.row:not(:first-child) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/**
+ * This is temporary
+ */
+.row-noPadding {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+/**
+ * End of temp
+ */
+
+/**
+ * Uneven rows
+ */
+.row-b {
+    background-color: #f5f5f5;
+}
+
+/**
+ * Speaker blocks
+ */
+.speakersBlok {
+    margin-top:2rem;
+    background-color: #D8D8D8;
+    height: 200px;
+    border-radius: .5rem;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden; /* Fix for placing heads properly responsive */
+}
+.speakersBlok img {
+    height: 100%;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 0px;
+    cursor: pointer;
+}
+.speakersBlokQuestion {
+    position: absolute;
+    font-size: 6rem;
+    left: 50%;
+    margin-left: -16px;
+    top: 7.5%;
+}
+
+/**
+ * LABELS
+ */
+a[class^="label"] {
+    position: relative;
+    margin-top: -1.75rem;
+    width: 100%;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    padding: .05rem .25rem .05rem 0.25rem;
+    background-color: #525199;
+    border-radius: .2rem;
+    text-decoration: none;
+}
+a[class^="label"]:link {
+    color: white;
+}
+a[class^="label"]:visited {
+    color: white;
+}
+a[class^="label"]:hover {
+    color: white;
+    text-decoration: underline;
+}
+a[class^="label"]:active {
+    color: white;
+}
+
+span[class^="label-"] {
+    padding: .05rem .25rem .05rem 0.25rem;
+    border-radius: .2rem;
+}
+
+div[class^="label-"] {
+    position: relative;
+    text-align:center;
+    margin-top: -1.75rem;
+    width: 100%;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    padding: .5rem .25rem .05rem 0.25rem;
+    min-height: 2.75rem;
+}
+div[class^="label-"] h2 {
+    font-size: 1rem;
+}
+div[class^="label-"] p {
+    margin-bottom: 0;
+}
+div[class^="label-"] b {
+    color: #000;
+}
+
+.color-serviceDesign {
+    color:#000;
+}
+.label-serviceDesign {
+    background-color:#FFF;
+}
+
+.color-leanStartup {
+    color:#000;
+}
+.label-leanStartup {
+    background-color:#FFF;
+}
+
+.color-APIs {
+    color:#000;
+}
+.label-APIs {
+    background-color:#FFF;
+}
+
+.color-digitalExperiences {
+    color:#000;
+}
+.label-digitalExperiences {
+    background-color:#FFF;
+}
+
+/** 
+ * Balls
+ */
+span[class^="line-"] {
+    border-bottom: 2px solid;
+}
+.line-serviceDesign {
+    border-bottom-color:#60A6DA !important;
+}
+.line-leanStartup {
+    border-bottom-color:#525199 !important;
+}
+.line-APIs {
+    border-bottom-color:#AB0066 !important;
+}
+.line-digitalExperiences {
+    border-bottom-color:#349651 !important;
+}
+
+/**
+ * Triangles 
+ */
+div[class^="triangle"] {
+    position: relative;
+    background-size: 63.3px 29.17px; 
+    width: 63.3px; /* total = 380 */
+    height: 29.17px; /* total = 175 */
+    left: 50%;
+    bottom: 1rem;
+    margin-left: -31.65px;
+}
+.triangle {
+    background-image: url("../img/arrow-a.png");
+}
+.triangle-b {
+    background-image: url("../img/arrow-b.png");
+}
+
+/**
+ * Mailchimp labels
+ */
+label[class="heading-b-xl"] {
+    margin-top: 12px;
+}
+
+/**
+ * SPEAKERS
+ */
+.speaker {
+    padding-bottom: .25rem;
+    cursor: pointer;
+}
+
+.speakersBlokFlag {
+    position: absolute;
+    top: 2rem;
+    left: 1.25rem;
+    width: 3rem;
+    height: 6rem;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.speakersBlokFlag::after {
+    position: absolute;
+    background-image: url('../img/speakerLogo.svg');
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    bottom: 0.5rem;
+    content: ""; /* Content should be empty */
+}
+.serviceDesign {
+    background-color: #67a6da;
+}
+.leanStartup {
+    background-color: #54519a;
+}
+.APIs {
+    background-color: #a70466;
+}
+.digitalExperiences {
+    background-color: #349651;
+}
+
+/*
+.speaker:hover,
+.speaker:focus {
+    -webkit-animation-name: woooohaaaaaa;
+    -webkit-animation-duration: 0.5s;
+    -webkit-transform-origin:50% 50%;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+}
+*/
+
+#speaker {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: #D8D8D8;
+    height: 200px;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+#speaker {
+    position: relative;
+    margin-right: 1rem;
+    top: 1.5rem;
+    background-color: #D8D8D8;
+    height: 10rem;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+#speaker img { /* TEMPORARY UNTIL REAL PHOTOS ARE AVAILABLE */
+    padding: .5rem;
+}
+
+.footer-social-links {
+    padding-left: 0 !important;
+}
+
+.speakerSocial {
+    list-style: none !important;
+}
+
+.speakerSocial a {
+    text-decoration: none !important;
+}
+
+/**
+ * MEDIA QUERIES
+ */
+
+/* EVERYTHING SMALLER THAN 500 */
+@media only screen and (max-width: 500px) {
+
+    div[class^="label-"] p {
+        font-size: .7rem;
+        min-height: 2rem;
+    }
+
+}
+/* EVERYTHING LARGER THAN 500 */
+@media only screen and (min-width: 500px) {
+
+    div[class^="label-"] p {
+        font-size: .85rem;
+        min-height: 4rem;
+    }
+
+}
+
+/* EVERYTHING SMALLER in WIDTH THAN 992 */
+@media only screen and (max-width: 992px) {
+
+    #speaker {
+        display: none;
+    }
+
+    .heading-banner {
+        opacity: 0;
+    }
+
+    .fullScreenImage {
+        height: 30rem;
+        margin-top: 2rem;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    iframe {
+        display: none;
+    }
+
+}
+
+/* EVERYTHING LARGER in WIDTH THAN 1200 */
+@media only screen and (min-width: 1200px) {
+
+    iframe {
+        display: block;
+    }
+
+}
+
+/* EVERYTHING SMALLER in WIDTH THAN 680 */
+@media only screen and (max-width: 680px) {
+
+    .row {
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+
+    /*
+    .eventLogo {
+        position: absolute;
+        height: 200px;
+        left: 50%;
+        margin-left: -100px;
+        margin-top: 3%;
+        width: 200px;
+        display: none;
+    }
+    */
+
+}
+
+/* EVERYTHING SMALLER in WIDTH THAN 400 */
+@media only screen and (max-width: 400px) {
+
+    img[class^="blueQuote"] {
+        width: 2.5rem;
+    }
+
+    .blueQuoteUp {
+        top: 0rem;
+        left: 0rem;
+    }
+    .blueQuoteDown {
+        bottom: 4rem;
+        right: 0rem;
+        transform: rotate(180deg);
+    }
+
+}
+
+/* EVERYTHING SMALLER in HEIGHT THAN 630 */
+@media only screen and (max-height: 650px) {
+
+    .eventLogo {
+        top: -5% !important;
+    }
+
+}
+
+/**
+ * Keyframes
+ */
+@-webkit-keyframes woooohaaaaaa {
+    0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+    10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+    30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+    40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+    50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+    70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+    80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+    90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+    100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}

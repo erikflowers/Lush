@@ -1,2 +1,5 @@
 # Lush
-Lush app on the ing-experience-design.com website
+
+The repo contains the webpages for http://www.ing-experience-design.com/Lush
+
+For more info, please visit: https://github.com/designing-experiences/Lush.js

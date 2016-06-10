@@ -1,0 +1,75 @@
+/**
+ * THESE EDITS ARE FOR THE ONLINE LUSH EXAMPLE
+ * YOU DON'T NEED THIS FILE TO RUN LUSH
+ * MORE INFO: https://www.npmjs.com/package/Lush.js
+ */
+
+/**
+ * Edits to the page
+ */
+#lushAllTheThings {
+    display         : block;
+    width           : 80vw;
+    min-height      : 40vw; 
+    margin-top      : 1rem;
+    font-family     : consolas;
+}
+.lush--responsiveRow {
+    margin-top      : -1.5rem;
+    left            : -1.25rem;
+}
+ 
+/**
+ * Add helper block
+ */
+.helperBlock {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    z-index:999999; /* always in the front */
+    display: none;
+}
+
+/**
+ * Edits to Lush
+ */
+lush {
+    background-color: #FFF;
+    margin-top      : 1rem;
+    margin-left     : -0.5rem;
+}
+lush img {
+    width           : 24.5rem;
+    display         : block;
+}
+.lush-layer-stepdefinition {
+    background-color: #E1E68B;
+}
+.lush-layer-channel {
+    background-color: #98CC03;
+}
+.lush-layer-actor {
+    background-color: #C25A00;
+}
+.lush-layer-apisystem {
+    background-color: #3F6BA6;
+}
+.lush-layer-observationfact {
+    background-color: #6188C9;
+}
+.lush-layer-policyrule {
+    background-color: #743966;
+}
+.lush-layer-metric {
+    background-color: #DF425F;
+}
+.lush-layer-criticalmoment {
+    background-color: #9E3226;
+}
+.lush-layer-question {
+    background-color: #97631A;
+}
+.lush-layer-idea {
+    background-color: #D80076;
+}

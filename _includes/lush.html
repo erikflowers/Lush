@@ -1,0 +1,87 @@
+<style>
+/**
+ * Custom styles for Lush
+ */
+[class^="lush-layer-"]::after {
+	position 		: relative;
+    width 			: 1.5rem;
+    height 			: 1.5rem;
+    left 			: 22.8rem; /* THIS IS NOT GOOD, SHOULD BE FIXED */
+    content 		: "";
+}
+.lush-layer-channel::after {
+	background 		: url(./images/icons/channel.png) no-repeat;
+	background-size : cover;
+}
+.lush-layer-apisystem::after {
+	background 		: url(./images/icons/api.png) no-repeat;
+	background-size : cover;
+}
+.lush-layer-policyrule::after {
+	background 		: url(./images/icons/policyrule.png) no-repeat;
+	background-size : cover;
+}
+.lush-layer-question::after {
+	background 		: url(./images/icons/question.png) no-repeat;
+	background-size : cover;
+}
+.lush-layer-actor::after {
+	background 		: url(./images/icons/actor.png) no-repeat;
+	background-size : cover;
+}
+.lush-layer-idea::after {
+	background 		: url(./images/icons/idea.png) no-repeat;
+	background-size : cover;
+}
+.lush-layer-criticalmoment::after {
+	background  	: url(./images/icons/criticalmoment.png) no-repeat;
+	background-size : cover;
+}
+.lush-layer-metric::after {
+	background 		: url(./images/icons/metric.png) no-repeat;
+	background-size : cover;
+}
+.lush-layer-observationfact::after {
+	background: url(./images/icons/observationfact.png) no-repeat;
+	background-size: cover;
+}
+/**
+ * Funny stickies
+ */
+div[class^="stickies"] {
+	min-width:48px;
+	min-height: 48px;
+	-webkit-box-shadow: 18px 22px 63px 0px rgba(0,0,0,0.64);
+	-moz-box-shadow: 18px 22px 63px 0px rgba(0,0,0,0.64);
+	box-shadow: 18px 22px 63px 0px rgba(0,0,0,0.64);
+}
+/**
+ * Special GIT addition
+ */
+select[id^="lush--git"] {
+	width:100%;
+}
+input[id^="lush--git"] {
+	width:100%;
+}
+#lush--git-box > div {
+	margin-top: 0.5rem;
+}
+#lush--git-load {
+	width:100%;
+}
+#lush--git-error {
+	color: red;
+	font-weight: bold;
+}
+.tg small, .tg .small {
+	font-size: 0.5rem;
+}
+</style>
+
+<script src="https://cdn.rawgit.com/designing-experiences/Lush.js/master/dist/lush.min.js"></script>
+<script src="{{base}}/assets/js/lush-git.js"></script>
+<script src="{{base}}/assets/js/rotate3Di-0.9.js"></script>
+<script src="{{base}}/assets/js/fallingStickies.js"></script>
+<script src="{{base}}/assets/js/jquery.fancybox.pack.js"></script>
+<script src="{{base}}/assets/js/fallingStickies.js"></script>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html ng-app="ingExperience" lang="nl">
+	{% include base.html %}
+	{% include header-lush.html %}
+	{% include lush.html %}
+	<body class="tg">
+		<header top-navigation></header>
+		<main role="main" data-current-content="*">
+			<div class="col-xxs-10 col-xxs-offset-1 lush--responsiveRow">
+				<lush-title></lush-title>
+				<a class="btn btn-wrap btn-primary" id="lush--git" href="#lush--git-box">Git Connect</a>
+				<span class="btn btn-wrap btn-primary" id="lush--markdownLush-switch">Toggle Markdown</span>
+				<span class="btn btn-wrap btn-primary" id="lush--upload">Upload Markdown</span>
+				<span class="btn btn-wrap btn-primary" id="lush--download-md">Download as Markdown</span>
+				<span class="btn btn-wrap btn-primary" id="lush--download-img">Download as Image</span>
+
+				<!-- GIT BOX FOR CONNECTING TO GITHUB -->
+				<div id="lush--git-box" style="display:none">
+
+					<div>
+						<b>Load your blueprints from a Git repo.</b>
+					</div>
+
+					<div>
+						Git source:<br>
+						<select id="lush--git-source">
+						  <option value="github" selected="selected">Github</option>
+						  <option value="gitlab">Gitlab</option>
+						</select>
+					</div>
+
+					<div style="display:none"><!-- SET TO DISPLAY:NONE, HANDLED IN lush-git.js -->
+						Source URL:<br>
+						<input type="text" id="lush--git-sourceUrl" value="api.github.com">
+						<small>Url without https</small>
+					</div>
+
+					<div style="display:none"><!-- SET TO DISPLAY:NONE, HANDLED IN lush-git.js -->
+						Private Token:<br>
+						<input type="text" id="lush--git-privateToken" autocomplete="on">
+						<small><a href="https://www.safaribooksonline.com/library/view/gitlab-cookbook/9781783986842/ch06s05.html">Learn</a> how to create a private token. This token will not be stored in the cloud.</small>
+					</div>
+
+					<div>
+						User or Project:<br>
+						<input type="text" id="lush--git-user" value="designing-experiences">
+					</div>
+
+					<div>
+						Repo:<br>
+						<input type="text" id="lush--git-repo" value="Lush.js">
+					</div>
+
+					<div>
+						Directory:<br>
+						<input type="text" id="lush--git-dir" value="blueprints">
+					</div>
+
+					<div style="display:none">
+						Git source content:<br>
+						<select id="lush--git-sourceContentUrl">
+							<option value="">---SELECT FILE---</option>
+						</select>
+					</div>
+
+					<div>
+						<span class="btn btn-wrap btn-primary" id="lush--git-load">Load</span>
+					</div>
+
+					<!-- END GIT BOX -->
+				</div>
+
+				{{ content }}
+
+			</div>
+		</main>
+		<div id="footer-app" class="ng-scope">
+		    <div class="tg" g-footer=""></div>
+		</div>
+	</body>
+</html>

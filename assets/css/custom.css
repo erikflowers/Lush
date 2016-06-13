@@ -4,6 +4,9 @@
 .tg img {
     width: 100%;
 }
+.tg .navbar .navbar-topbar {
+    width: 100vw;
+}
 
 /**
  * Set the brandbar

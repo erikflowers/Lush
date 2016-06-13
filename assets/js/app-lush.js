@@ -37,6 +37,13 @@ angular.module('ingExperience', [
 	 * Some hosted vars for Lush
 	 */
 	var LUSHSWITCH = true; // true = lush is generated, false = textarea
+	
+	/**
+	 * When scrolled, fix the margin of the body
+	 */
+	$(window).scroll(function(){
+		$('.navbar-topbar').css('margin-left', $(window).scrollLeft() + 'px');
+	});
 
 	/**
 	 * Should the typed string be recorded?

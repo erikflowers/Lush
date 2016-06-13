@@ -8,7 +8,7 @@ Emma helps her mother Lois personalize her banking preferences. Lois is having t
 
 			$ Step Definition
 			Lois logs in on the banking website with Emma's help.
-            ![step 1](./images/lois-and-emma.jpg)
+            ![step 1](https://cdn.rawgit.com/designing-experiences/Lush/develop/blueprints/images/lois-and-emma.jpg)
 
 			$ Channel
 			Website
@@ -43,7 +43,7 @@ Emma helps her mother Lois personalize her banking preferences. Lois is having t
 
 			$ Step Definition
 			Unable to find the way out, they call the "Call Center". They are asked to identify themselves. The Call Center employee informs that the bank provides thematic customizations. And one of them is especially for the elderly. Happy to try it out, Emma and Lois try to locate the settings. Meanwhile the session times-out. They login again. And are able to locate the settings with the help of the call center employee. The settings are presented as a wizard. Feeling good about this, they hang up.
-			![step 3](./images/call-center.jpg)
+			![step 3](https://cdn.rawgit.com/designing-experiences/Lush/develop/blueprints/images/call-center.jpg)
 
 			$ Actor
 			Lois
@@ -64,7 +64,7 @@ Emma helps her mother Lois personalize her banking preferences. Lois is having t
 
 			$ Step Definition
 			Emma and Lois configure the look-n-feel for the banking website. They choose the font size "Large". They are shown a preview. They like the new changes and confirm them. The change takes effect immediately.
-			![step 4](./images/website-preferences.jpg)
+			![step 4](https://cdn.rawgit.com/designing-experiences/Lush/develop/blueprints/images/website-preferences.jpg)
 
 			$ Actor
 			Lois
@@ -106,7 +106,7 @@ Emma helps her mother Lois personalize her banking preferences. Lois is having t
 
 			$ Step Definition
 			Emma and Lois configure the look-n-feel for the Mobile Banking App. The wizard asks them to get their device. They log in on their mobile app and continue setting their app preferences. They choose to receive push notifications when the pension money arrives. They are shown a preview. They like the new changes and confirm them. The change takes effect immediately.
-			![step 5](./images/app-preferences.jpg)
+			![step 5](https://cdn.rawgit.com/designing-experiences/Lush/develop/blueprints/images/app-preferences.jpg)
 
 			$ Actor
 			Lois
@@ -142,7 +142,7 @@ Emma helps her mother Lois personalize her banking preferences. Lois is having t
 
 			$ Step Definition
 			Emma and Lois configure the look-n-feel for the ATM. They choose for a weekly withdrawal limit of 100 euros. They are shown a preview. They like the new changes and confirm them. The change takes effect immediately.
-			![step 6](./images/atm-preferences.jpg)
+			![step 6](https://cdn.rawgit.com/designing-experiences/Lush/develop/blueprints/images/atm-preferences.jpg)
 
 			$ Actor
 			Lois
@@ -175,7 +175,7 @@ Emma helps her mother Lois personalize her banking preferences. Lois is having t
 
             $ Step Definition
             Emma and Lois leave their feedback on this experience.
-            ![step 7](./images/feedback.jpg)
+            ![step 7](https://cdn.rawgit.com/designing-experiences/Lush/develop/blueprints/images/feedback.jpg)
 
             $ Actor
             Lois

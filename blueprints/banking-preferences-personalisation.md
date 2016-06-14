@@ -26,6 +26,7 @@ Emma helps her mother Lois personalize her banking preferences. Lois is having t
 
 			$ Step Definition
 			Emma and Lois search frantically for the changing the font on the website.
+			![step 1](https://cdn.rawgit.com/designing-experiences/Lush/develop/blueprints/images/lois-and-emma.jpg)
 
 			$ Channel
 			Website

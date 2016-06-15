@@ -8,7 +8,7 @@ title: "Online Lush"
 	Welcome to lush
 
 	    $ Scenario
-	    Welcome to lush
+	    You can use Lush directly on this page.
 
 	        $ Step
 	            $ Step Definition

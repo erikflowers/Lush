@@ -97,7 +97,7 @@ angular.module('ingExperience', [
 			        /**
 			         * Get the Lush element and change it to textarea
 			         */
-			        var markdownResult = lush2markdown( $('lush-title').text(), $('lush') );
+			        var markdownResult = lush2markdown( $('lush-title').text(), $('lush-subtitle').text(), $('lush') );
 			        //$('#lushAllTheThings').text(  );
 			        $('lush').replaceWith('<textarea id="lushAllTheThings" >' + markdownResult.markdown + '</textarea>')
 			        LUSHSWITCH = false;

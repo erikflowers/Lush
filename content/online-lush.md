@@ -5,7 +5,7 @@ title: "Online Lush"
 
 <textarea id="lushAllTheThings">
 	$ Service
-	Welcome to lush
+	Welcome to Lush
 
 	    $ Scenario
 	    You can use Lush directly on this page.

@@ -6,7 +6,11 @@ $('document').ready(function(){
   function loadRawMd(url){
     $.get( url )
       .fail(function(){
-        $('#lush--git-box').prepend('<div id="lush--git-error">Something is wrong, check your input</div>');
+        if( $('.lush--git-error').length ){
+          $('.lush--git-error').text('Something is still wrong, check your input');
+        } else {
+          $('#lush--git-box').prepend('<div id="lush--git-error">Something is wrong, check your input</div>');
+        }
       })
       .done(function(data){
         /**

@@ -12,7 +12,7 @@ title: "Online Lush"
 
 	        $ Step
 	            $ Step Definition
-	            For a Lushy view, load or drag your service blueorints here.
+	            For a Lushy view, load or drag your service blueprints here.
 
 	            $ Step Definition
 	            Choose "Git Connect" to load your service blueprints from Github or Gitlab onto Lush.

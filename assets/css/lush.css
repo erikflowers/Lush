@@ -48,6 +48,9 @@ lush-subtitle {
     background-color: #f3f3f3;
     padding: 0.5rem;
 }
+lush-subtitle::before {
+    content: "Scenario: ";
+}
 .lush-layer-stepdefinition {
     background-color: #E1E68B;
 }

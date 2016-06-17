@@ -12,8 +12,9 @@ title: "Online Lush"
 
 	        $ Step
 	            $ Step Definition
-	            Use Lush by uploading or dropping a markdown file.
+	            For a Lushy view, load or drag your service blueorints here.
 
 	            $ Step Definition
-	            Use Lush by clicking the _Git Connect_ button to connect to Github or Gitlab.
+	            Choose "Git Connect" to load your service blueprints from Github or Gitlab onto Lush.
+	           
 </textarea>

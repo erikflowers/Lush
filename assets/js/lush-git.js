@@ -24,7 +24,7 @@ $('document').ready(function(){
   /**
    * function to load Gitlab resources
    */
-  function loadGitlabFiles(source, privateToken, user, repo, dir){
+  function loadGitlabFiles(source, privateToken, user, repo, dir, branch){
     $.get( 'https://' + source + '/api/v3/projects/' + user + '%2F' + repo + '/repository/tree?path=' + dir + '&private_token=' + privateToken )
       .fail(function(){
         $('#lush--git-box').prepend('<div id="lush--git-error">Something is wrong, check your input</div>');
@@ -50,8 +50,8 @@ $('document').ready(function(){
   /**
    * Function to load Github resources
    */
-  function loadGithubFiles(source, privateToken, user, repo, dir){
-    $.get( 'https://' + source + '/repos/' + user + '/' + repo + '/contents/' + dir + '?ref=master')
+  function loadGithubFiles(source, privateToken, user, repo, dir, branch){
+    $.get( 'https://' + source + '/repos/' + user + '/' + repo + '/contents/' + dir + '?ref=' + branch)
       .fail(function(){
         $('#lush--git-box').prepend('<div id="lush--git-error">Something is wrong, check your input</div>');
       })
@@ -66,6 +66,9 @@ $('document').ready(function(){
             $('#lush--git-sourceContentUrl').append('<option value="' + contentUrl + '">' + name + '</option>');
           }
         })
+
+        // Add the branches
+
 
         $('#lush--git-sourceContentUrl').change(function(){
           $.fancybox.close();
@@ -146,10 +149,10 @@ $('document').ready(function(){
     $('#lush--git-load').click(function(){
       switch ( $('#lush--git-source').val() ){
         case 'github':
-          loadGithubFiles( $('#lush--git-sourceUrl').val(), $('#lush--git-privateToken').val(), $('#lush--git-user').val(), $('#lush--git-repo').val(), $('#lush--git-dir').val() );
+          loadGithubFiles( $('#lush--git-sourceUrl').val(), $('#lush--git-privateToken').val(), $('#lush--git-user').val(), $('#lush--git-repo').val(), $('#lush--git-dir').val(), $('#lush--git-branch').val() );
           break;
         case 'gitlab':
-          loadGitlabFiles( $('#lush--git-sourceUrl').val(), $('#lush--git-privateToken').val(), $('#lush--git-user').val(), $('#lush--git-repo').val(), $('#lush--git-dir').val() );
+          loadGitlabFiles( $('#lush--git-sourceUrl').val(), $('#lush--git-privateToken').val(), $('#lush--git-user').val(), $('#lush--git-repo').val(), $('#lush--git-dir').val(), $('#lush--git-branch').val());
           break;
       }
     })

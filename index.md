@@ -39,11 +39,11 @@ Lush accepts service blueprints written in Markdown. It recognizes special eleme
 * ``$ Actor`` - The journeyer, support actors  of the step.
 * ``$ API, System`` - What makes this step “go”. APIs, Systems, Processes.
 * ``$ Observation, Fact`` - Statements or facts that are  important to note.
-* ``$ Policy, Rule`` - Rules or policies that dictate why things are a certain way.
+* ``$ Policy, Rule`` - Rules or policies that dictate  why things are a certain way.
 * ``$ Metric`` - Data that helps measure &  learn about the step / scenario.
-* ``$ Critical Moment`` - Sources of pain or experience breakdown.
+* ``$ Critical Moment`` - Sources of pain or experience  breakdown.
 * ``$ Question`` - Questions that need to be followed up on.
-* ``$ Idea`` - Ah-ha realisations to improve the service experience.
+* ``$ Idea`` - Ah-ha realisations to  improve the service experience.
 
 ### Styling Lush
 If you use Lush on your own website you can easily style it according to your needs. To learn more about styling read the [Readme](https://github.com/designing-experiences/Lush.js) file on Github.

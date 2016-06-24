@@ -4,6 +4,8 @@ title: About Lush
 home: true
 ---
 
+> "your service blueprints wherever you go!"
+
 Lush is an online [Service Blueprinting](http://www.ing-experience-design.com/service-blueprinting/) tool. In this version, it supports loading your service blueprints and viewing them as beautiful, friendly HTML.
 
 ### Why Lush?

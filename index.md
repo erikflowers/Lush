@@ -8,6 +8,8 @@ home: true
 
 Lush is an online [Service Blueprinting](http://www.ing-experience-design.com/service-blueprinting/) tool. In this version, it supports loading your service blueprints and viewing them as beautiful, friendly HTML.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jug-twiSfcE" frameborder="0" allowfullscreen></iframe>
+
 ### Why Lush?
 Many teams have a need to make their Service Blueprints digital. This helps in sharing them with other stakeholders and maintaining them over a period of time. However, the tooling used for this digitization is far from optimal! Excel, Powerpoint or Omnigraffle templates are a great start, but are a hassle to keep up-to-date. Let alone working on them as a group!
 
@@ -49,3 +51,6 @@ Lush accepts service blueprints written in Markdown. It recognizes special eleme
 
 ### Styling Lush
 If you use Lush on your own website you can easily style it according to your needs. To learn more about styling read the [Readme](https://github.com/designing-experiences/Lush.js) file on Github.
+
+### How To Video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/J6zZcE_1BMM" frameborder="0" allowfullscreen></iframe>

@@ -231,4 +231,19 @@ angular.module('ingExperience', [
 			}
 
 		});
+
+	/**
+	 * Enabling the help video in the fancybox
+	 */
+ 	$("#lush--help").fancybox({
+	    maxWidth    : 560,
+	    maxHeight   : 315,
+	    fitToView   : false,
+	    width       : '90%',
+	    height      : '90%',
+	    autoSize    : false,
+	    closeClick  : false,
+	    openEffect  : 'none',
+	    closeEffect : 'none'
+  	});
 }]);
